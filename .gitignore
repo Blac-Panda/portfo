@@ -1,6 +1,6 @@
-.server.py
+/.server.py
 /portfo_venv/__pycache__
 /portfo_venv/Include
 /portfo_venv/Lib
 /portfo_venv/Scripts
-/portfo_venv/pyenv.cfg
+/portfo_venv/pyvenv.cfg
