@@ -11,16 +11,16 @@ def html_page(page_name):
     return render_template(page_name)
 
 
-@app.route('/submit_form', methods=['POST', 'GET'])
-def submit_form():
-    if request.method == 'POST':
-        try:
-            data = request.form.to_dict()
-            write_to_csv(data)
-            return redirect('thanks.html')
-        except:
-            return 'did not save to db'
-    return 'error'
+# @app.route('/submit_form', methods=['POST', 'GET'])
+# def submit_form():
+#     if request.method == 'POST':
+#         try:
+#             data = request.form.to_dict()
+#             write_to_csv(data)
+#             return redirect('thanks.html')
+#         except:
+#             return 'did not save to db'
+#     return 'error'
 
 def write_to_file(data):
     with open ('database.txt', mode='a') as database:
